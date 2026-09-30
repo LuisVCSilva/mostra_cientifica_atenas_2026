@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="5ª Mostra Científica UniAtenas — apresentação, programação e votação dos trabalhos científicos."
+>
+
+<title>
+    5ª Mostra Científica UniAtenas
+</title>
+
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+>
+
+<link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}"
+>
+
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+
+    <div class="container">
+
+        <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="/"
+        >
+            <img
+                src="{{ url_for('static', filename='images/logo_uniatenas.png') }}"
+                alt="UniAtenas"
+                height="42"
+            >
+
+            <span>
+                <!-- Mostra Científica -->
+            </span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarPrincipal"
+            aria-controls="navbarPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarPrincipal"
+        >
+
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#evento"
+                    >
+                        Evento
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#programacao"
+                    >
+                        Programação
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#votacao"
+                    >
+                        Votação
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="/anais"
+                    >
+                        Anais
+                    </a>
+                </li>
+
+                <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                    <a
+                        class="btn btn-outline-light btn-sm"
+                        href="/dashboard"
+                    >
+                        Votos em tempo real
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header
+    class="py-5"
+    style="
+        background:
+            linear-gradient(
+                135deg,
+                #0b1f3a 0%,
+                #123c69 55%,
+                #1769aa 100%
+            );
+        color: white;
+    "
+>
+
+<div class="container py-5">
+
+    <div class="row align-items-center g-5">
+
+        <div class="col-lg-7">
+
+            <span
+                class="badge bg-light text-primary px-3 py-2 mb-3"
+            >
+                5ª Edição
+            </span>
+
+            <h1 class="display-4 fw-bold">
+                Mostra Científica
+                UniAtenas
+            </h1>
+
+            <p class="lead mt-3 mb-4">
+                Ciência, inovação e conhecimento em um único
+                encontro.
+            </p>
+
+            <p class="fs-5">
+                Uma noite dedicada à apresentação de trabalhos
+                científicos, troca de experiências e valorização
+                da produção acadêmica.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+
+                <a
+                    href="#votacao"
+                    class="btn btn-light btn-lg px-4"
+                >
+                    Participar da votação
+                </a>
+
+                <a
+                    href="/anais"
+                    class="btn btn-outline-light btn-lg px-4"
+                >
+                    Anais do evento
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-5 text-center">
+
+            <img
+                src="{{ url_for('static', filename='images/logo_mostra_animado.gif') }}"
+                alt="5ª Mostra Científica UniAtenas"
+                class="img-fluid rounded-4 shadow-lg"
+                style="max-height: 360px;"
+            >
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</header>
+
+
+<!-- =========================================================
+     INFORMAÇÕES PRINCIPAIS
+========================================================= -->
+
+<section
+    id="evento"
+    class="py-5 bg-light"
+>
+
+
+<div class="container">
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            Sobre o evento
+        </h2>
+
+        <p class="text-muted">
+            5ª Mostra Científica UniAtenas
+        </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+
+        <div class="col-md-4">
+
+            <div class="card h-100 border-0 shadow-sm">
+
+                <div class="card-body text-center p-4">
+
+                    <div class="display-5 mb-3">
+                        18
+                    </div>
+
+                    <h3 class="h5 fw-bold">
+                        Novembro de 2026
+                    </h3>
+
+                    <p class="text-muted mb-0">
+                        Quarta-feira
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card h-100 border-0 shadow-sm">
+
+                <div class="card-body text-center p-4">
+
+                    <div class="display-5 mb-3">
+                        17:30
+                    </div>
+
+                    <h3 class="h5 fw-bold">
+                        Credenciamento
+                    </h3>
+
+                    <p class="text-muted mb-0">
+                        Abertura das atividades às 18h
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card h-100 border-0 shadow-sm">
+
+                <div class="card-body text-center p-4">
+
+                    <div class="display-5 mb-3">
+                        23h
+                    </div>
+
+                    <h3 class="h5 fw-bold">
+                        Encerramento
+                    </h3>
+
+                    <p class="text-muted mb-0">
+                        Salão Nobre — Centro Universitário Atenas
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="row justify-content-center mt-5">
+
+        <div class="col-lg-9">
+
+            <div class="card border-0 shadow-sm">
+
+                <div class="card-body p-4 p-lg-5">
+
+                    <h3 class="h4 fw-bold mb-3">
+                        Ciência em destaque
+                    </h3>
+
+                    <p class="text-muted mb-0">
+
+                        A Mostra Científica UniAtenas reúne
+                        estudantes, professores e pesquisadores
+                        para compartilhar resultados, ideias e
+                        experiências desenvolvidas no ambiente
+                        acadêmico.
+
+                        <br><br>
+
+                        Durante o evento, os trabalhos serão
+                        apresentados ao público e poderão ser
+                        avaliados pelos participantes cadastrados.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- =========================================================
+     PROGRAMAÇÃO
+========================================================= -->
+
+<section
+    id="programacao"
+    class="py-5"
+>
+
+
+<div class="container">
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            Programação
+        </h2>
+
+        <p class="text-muted">
+            18 de novembro de 2026
+        </p>
+
+    </div>
+
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="timeline">
+
+
+                <div class="card border-0 shadow-sm mb-3">
+
+                    <div class="card-body p-4">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-3">
+
+                                <strong class="text-primary fs-5">
+                                    17:30
+                                </strong>
+
+                            </div>
+
+                            <div class="col-sm-9">
+
+                                <h3 class="h5 mb-1">
+                                    Credenciamento
+                                </h3>
+
+                                <p class="text-muted mb-0">
+                                    Recepção dos participantes.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card border-0 shadow-sm mb-3">
+
+                    <div class="card-body p-4">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-3">
+
+                                <strong class="text-primary fs-5">
+                                    18:00
+                                </strong>
+
+                            </div>
+
+                            <div class="col-sm-9">
+
+                                <h3 class="h5 mb-1">
+                                    Abertura
+                                </h3>
+
+                                <p class="text-muted mb-0">
+                                    Abertura oficial da 5ª Mostra
+                                    Científica UniAtenas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card border-0 shadow-sm mb-3">
+
+                    <div class="card-body p-4">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-3">
+
+                                <strong class="text-primary fs-5">
+                                    18:30
+                                </strong>
+
+                            </div>
+
+                            <div class="col-sm-9">
+
+                                <h3 class="h5 mb-1">
+                                    Palestra
+                                </h3>
+
+                                <p class="text-muted mb-0">
+                                    Momento de integração e
+                                    discussão científica.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card border-0 shadow-sm mb-3">
+
+                    <div class="card-body p-4">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-3">
+
+                                <strong class="text-primary fs-5">
+                                    Durante o evento
+                                </strong>
+
+                            </div>
+
+                            <div class="col-sm-9">
+
+                                <h3 class="h5 mb-1">
+                                    Apresentação dos trabalhos
+                                </h3>
+
+                                <p class="text-muted mb-0">
+                                    Exposição dos projetos e
+                                    interação com os participantes.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card border-0 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-3">
+
+                                <strong class="text-primary fs-5">
+                                    Até 23:00
+                                </strong>
+
+                            </div>
+
+                            <div class="col-sm-9">
+
+                                <h3 class="h5 mb-1">
+                                    Encerramento e premiação
+                                </h3>
+
+                                <p class="text-muted mb-0">
+                                    Encerramento das atividades e
+                                    divulgação dos resultados.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- =========================================================
+     VOTAÇÃO
+========================================================= -->
+
+<section
+    id="votacao"
+    class="py-5 bg-light"
+>
+
+
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-7">
+
+            <div class="text-center mb-4">
+
+                <h2 class="fw-bold">
+                    Votação dos trabalhos
+                </h2>
+
+                <p class="text-muted">
+
+                    Participe da avaliação dos trabalhos
+                    apresentados na Mostra.
+
+                </p>
+
+            </div>
+
+
+            <div class="card border-0 shadow-lg">
+
+                <div class="card-body p-4 p-lg-5">
+
+
+                    <!-- LOGIN -->
+
+                    <div id="login-area">
+
+                        <div class="text-center mb-4">
+
+                            <h3 class="h4 fw-bold">
+                                Acesso à votação
+                            </h3>
+
+                            <p class="text-muted">
+
+                                Informe o e-mail utilizado no
+                                cadastro do evento.
+
+                            </p>
+
+                        </div>
+
+
+                        <form id="login-form">
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="email"
+                                    class="form-label fw-semibold"
+                                >
+                                    E-mail
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control form-control-lg"
+                                    id="email"
+                                    placeholder="seu@email.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary btn-lg w-100"
+                            >
+
+                                Enviar código de verificação
+
+                            </button>
+
+                        </form>
+
+
+                        <div
+                            id="login-message"
+                            class="mt-3"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- CÓDIGO -->
+
+                    <div
+                        id="codigo-area"
+                        class="d-none"
+                    >
+
+                        <hr class="my-4">
+
+
+                        <div class="text-center mb-4">
+
+                            <h3 class="h4 fw-bold">
+                                Verificação
+                            </h3>
+
+                            <p class="text-muted">
+
+                                Digite o código de 6 dígitos
+                                enviado para seu e-mail.
+
+                            </p>
+
+                        </div>
+
+
+                        <form id="codigo-form">
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="codigo"
+                                    class="form-label fw-semibold"
+                                >
+                                    Código de verificação
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control form-control-lg text-center"
+                                    id="codigo"
+                                    maxlength="6"
+                                    inputmode="numeric"
+                                    autocomplete="one-time-code"
+                                    placeholder="000000"
+                                    required
+                                >
+
+                                <div class="form-text text-center">
+
+                                    O código é válido por
+                                    10 minutos.
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn btn-success btn-lg w-100"
+                            >
+
+                                Confirmar código
+
+                            </button>
+
+                        </form>
+
+
+                        <div
+                            id="codigo-message"
+                            class="mt-3"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="text-center text-muted small mt-3">
+
+                A votação é restrita aos participantes
+                cadastrados no evento.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- =========================================================
+     LOCAL
+========================================================= -->
+
+<section class="py-5">
+
+
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8 text-center">
+
+            <h2 class="fw-bold mb-3">
+                Local do evento
+            </h2>
+
+            <p class="fs-5 mb-1">
+                Salão Nobre
+            </p>
+
+            <p class="text-muted">
+                Centro Universitário Atenas — Paracatu/MG
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="bg-dark text-white py-4">
+
+    <div class="container">
+
+        <div class="row align-items-center g-3">
+
+            <div class="col-md-6 text-center text-md-start">
+
+                <div class="d-flex align-items-center
+                            justify-content-center
+                            justify-content-md-start
+                            gap-3">
+
+                    <img
+                        src="{{ url_for('static', filename='images/logo_uniatenas.png') }}"
+                        alt="UniAtenas"
+                        height="40"
+                    >
+
+                    <div>
+
+                        <strong>
+                            5ª Mostra Científica UniAtenas
+                        </strong>
+
+                        <div class="small text-white-50">
+                            18 de novembro de 2026
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 text-center text-md-end">
+
+                <small class="text-white-50">
+
+                    Centro Universitário Atenas
+                    <br>
+                    Paracatu — Minas Gerais
+
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <hr class="border-secondary my-3">
+
+
+        <div class="text-center">
+
+            <small class="text-white-50">
+
+                © 2026 5ª Mostra Científica UniAtenas.
+                Todos os direitos reservados.
+                —
+                Desenvolvido por
+
+                <a
+                    href="https://github.com/LuisVCSilva"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-white text-decoration-none fw-semibold"
+                >
+                    @LuisVCSilva
+                </a>
+
+            </small>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =========================================================
+     BOOTSTRAP
+========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+<!-- =========================================================
+     AUTENTICAÇÃO
+========================================================= -->
+
+<script>
+
+const loginForm =
+    document.getElementById("login-form");
+
+const codigoForm =
+    document.getElementById("codigo-form");
+
+const loginMessage =
+    document.getElementById("login-message");
+
+const codigoMessage =
+    document.getElementById("codigo-message");
+
+const codigoArea =
+    document.getElementById("codigo-area");
+
+let emailAtual = "";
+
+
+/* =========================================================
+   SOLICITAR CÓDIGO
+========================================================= */
+
+loginForm.addEventListener(
+    "submit",
+    async function(event) {
+
+        event.preventDefault();
+
+        emailAtual =
+            document
+                .getElementById("email")
+                .value
+                .trim();
+
+        loginMessage.innerHTML = "";
+
+        try {
+
+            const response =
+                await fetch(
+                    "/api/login",
+                    {
+                        method: "POST",
+
+                        headers: {
+                            "Content-Type":
+                                "application/json"
+                        },
+
+                        body:
+                            JSON.stringify({
+                                email:
+                                    emailAtual
+                            })
+                    }
+                );
+
+            const data =
+                await response.json();
+
+
+            if (!response.ok) {
+
+                loginMessage.innerHTML = `
+                    <div class="alert alert-danger">
+                        ${data.erro ||
+                        "Não foi possível solicitar o código."}
+                    </div>
+                `;
+
+                return;
+
+            }
+
+
+            loginMessage.innerHTML = `
+                <div class="alert alert-success">
+                    ${data.mensagem}
+                </div>
+            `;
+
+
+            codigoArea.classList.remove(
+                "d-none"
+            );
+
+
+            document
+                .getElementById("codigo")
+                .focus();
+
+        }
+
+        catch (erro) {
+
+            loginMessage.innerHTML = `
+                <div class="alert alert-danger">
+                    Erro de comunicação com o servidor.
+                </div>
+            `;
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   VERIFICAR CÓDIGO
+========================================================= */
+
+codigoForm.addEventListener(
+    "submit",
+    async function(event) {
+
+        event.preventDefault();
+
+        const codigo =
+            document
+                .getElementById("codigo")
+                .value
+                .trim();
+
+        codigoMessage.innerHTML = "";
+
+
+        try {
+
+            const response =
+                await fetch(
+                    "/api/verificar",
+                    {
+                        method: "POST",
+
+                        headers: {
+                            "Content-Type":
+                                "application/json"
+                        },
+
+                        body:
+                            JSON.stringify({
+                                email:
+                                    emailAtual,
+
+                                codigo:
+                                    codigo
+                            })
+                    }
+                );
+
+
+            const data =
+                await response.json();
+
+
+            if (!response.ok) {
+
+                codigoMessage.innerHTML = `
+                    <div class="alert alert-danger">
+                        ${data.erro ||
+                        "Código inválido."}
+                    </div>
+                `;
+
+                return;
+
+            }
+
+
+            codigoMessage.innerHTML = `
+                <div class="alert alert-success">
+                    Login realizado com sucesso.
+                    Redirecionando para a votação...
+                </div>
+            `;
+
+
+            setTimeout(
+                function() {
+
+                    window.location.href =
+                        "/votar";
+
+                },
+                500
+            );
+
+        }
+
+        catch (erro) {
+
+            codigoMessage.innerHTML = `
+                <div class="alert alert-danger">
+                    Erro de comunicação com o servidor.
+                </div>
+            `;
+
+        }
+
+    }
+);
+
+</script>
+
+</body>
+
+</html>
+
