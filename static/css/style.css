@@ -1,0 +1,22 @@
+.navbar {
+    background-color: rgba(8, 11, 16, 0.78) !important;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+body {
+    padding-top: 66px;
+}
+
+#evento,
+#programacao,
+#votacao {
+    scroll-margin-top: 80px;
+}
